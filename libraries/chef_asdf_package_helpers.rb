@@ -50,7 +50,7 @@ class Chef
           if redhat? || fedora?
             package %w(gcc gcc-c++ glibc-devel java-1.8.0-openjdk-devel ncurses-devel openssl-devel wget wxBase.x86_64)
           elsif debian?
-            packages = %w(libgl1-mesa-dev libglu1-mesa-dev libpng3 libssh-dev xsltproc fop libxml2-utils default-jdk)
+            packages = %w(libgl1-mesa-dev libglu1-mesa-dev libpng16-16 libssh-dev xsltproc fop libxml2-utils default-jdk)
 
             if ubuntu_trusty?
               packages << 'libwxgtk2.8-dev'
